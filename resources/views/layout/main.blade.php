@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> @yield('title', 'International Freight Forwarder Transportation & Commission Agents')</title>
+    <title> @yield('title', 'N.N Freight')</title>
     <link rel="icon" href="{{ asset('public/image/logo.png') }}" />
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -108,7 +108,7 @@
                         <i class="fa-solid fa-handshake-angle"></i> Help
                     </a>
                 </li>
-                <li class="nav-item dropdown">
+                {{-- <li class="nav-item dropdown">
                     <a class="nav-link" data-toggle="dropdown" href="#">
                         <i class="far fa-bell"></i>
                         <span class="badge badge-warning navbar-badge">15</span>
@@ -133,12 +133,12 @@
                         <div class="dropdown-divider"></div>
                         <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
                     </div>
-                </li>
+                </li> --}}
                 <li class="nav-item dropdown">
                     <a class="nav-link " data-toggle="dropdown" href="" style="color: #7c5cc4">
                         <i class="fa-solid fa-user-plus"></i> {{Auth()->user()->name ?? ''}}</a>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right" style="max-width: 250px;min-width: 220px;">
-                        <div class="dropdown-divider"></div>
+                        {{-- <div class="dropdown-divider"></div>
                         <hr style="padding: 0;margin:0;">
                         <a href="" class="dropdown-item ">
 
@@ -151,7 +151,7 @@
                         <hr style="padding: 0;margin:0;">
                         <a href="" class="dropdown-item ">
                             <i class="fa-regular fa-user"></i> Password Change
-                        </a>
+                        </a> --}}
                         <hr style="padding: 0;margin:0;">
                         <a href="{{ route('admin.logout')}}" class="dropdown-item ">
                             <i class="fa-solid fa-right-from-bracket"></i> Log Out

@@ -46,7 +46,6 @@
                 <div class="col-md-8" style="text-align: left;">
                 </div>
                 <div class="col-md-2 hidden-print" style="text-align: left;">
-
                     <a id="click_print" type="button" class="btn btn-default btn-sm ml-3"><i class="dripicons-print"></i> Print</a>
                 </div>
                 <div class="col-md-6">
@@ -64,7 +63,7 @@
                             <tr class="">
                                 <th class="text-center pt-4" colspan="5">
                                     <img src="{{asset('public/image/logo.png')}}" style="width: 140px" alt="{{$show->supplier_name ?? ''}} ">
-                                    <h4 style="margin-top:10px;">({{ $show->supplier_name ?? '' }})</h4>
+                                    {{-- <h4 style="margin-top:10px;">({{ $show->supplier_name ?? '' }})</h4> --}}
                                 </th>
                             </tr>
                         </thead>

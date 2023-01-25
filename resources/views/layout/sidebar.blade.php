@@ -52,7 +52,7 @@
                         </li>
                     </ul>
                 </li> --}}
-                <li class="nav-item border-bottom">
+                {{-- <li class="nav-item border-bottom">
                     <a href="" class="nav-link">
                         <i class="fa thin fa-gear"></i>
                         <p>Settings <i class="fas fa-angle-left right"></i></p>
@@ -86,7 +86,7 @@
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li> --}}
             </ul>
         </nav>
     </div>
