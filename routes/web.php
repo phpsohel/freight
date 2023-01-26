@@ -59,6 +59,7 @@ Route::middleware(['auth'])->group(function(){
     Route::resource('containers', ContainerController::class);
     Route::get('containers/details/{id}', [ContainerController::class, 'show'])->name('containers.details');
     Route::get('containers/delete/{id}', [ContainerController::class, 'destroy'])->name('containers.delete');
+    Route::get('containers/receipt-pdf/{id}', [ContainerController::class, 'PDF'])->name('containers.pdf');
 });
 
 

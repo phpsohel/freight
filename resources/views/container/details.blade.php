@@ -46,7 +46,8 @@
                 <div class="col-md-8" style="text-align: left;">
                 </div>
                 <div class="col-md-2 hidden-print" style="text-align: left;">
-                    <a id="click_print" type="button" class="btn btn-default btn-sm ml-3"><i class="dripicons-print"></i> Print</a>
+                    <a id="click_print" type="button" class="btn btn-secondary buttons-print buttons-html5 "><i class="dripicons-print"></i> Print</a>
+                    <a href="{{ route('containers.pdf', $show->id) }}" target="_blank" type="button" class="btn btn-secondary buttons-pdf buttons-html5  "><i class="dripicons-print"></i> PDF</a>
                 </div>
                 <div class="col-md-6">
                 </div>

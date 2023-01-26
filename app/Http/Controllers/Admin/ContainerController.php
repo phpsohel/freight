@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
 use App\Models\Container;
 use Illuminate\Http\Request;
 use Mockery\Matcher\Contains;
+use Illuminate\Support\Carbon;
+use Barryvdh\DomPDF\Facade\Pdf;
+use App\Http\Controllers\Controller;
 
 class ContainerController extends Controller
 {
@@ -122,6 +124,14 @@ class ContainerController extends Controller
         $delete = Container::find($id);
         $delete->delete();
         return redirect()->back()->with('danger', 'Customer Delete Successfully!');
+    }
+    public function PDF(Request $request, $id)
+    {
+        $data['show'] = Container::find($id);
+        $customPaper = array(0,0,720,500);
+        $pdf = PDF::loadView('container.pdf',$data)->setPaper($customPaper,'portrait');
+        $pdf = $pdf->stream(Carbon::today()->toDateString().'-container.pdf');
+        return $pdf;
     }
     public function search()
     {

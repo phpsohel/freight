@@ -31,8 +31,6 @@
                     @endphp
                     <div class="input-group rounded  mb-4">
                         <input type="search" style="border-radius: 30px!important;padding: 25px 30px;" class="form-control rounded bl_number" placeholder="Search With Bl Number (Al1222004CGPPKL)" aria-label="Search" aria-describedby="search-addon" />
-
-
                     </div>
                 </div>
             </div>
@@ -42,7 +40,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     <footer style="position: fixed; bottom:0; color:#fff;">
 
